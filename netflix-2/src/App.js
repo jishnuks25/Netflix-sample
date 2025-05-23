@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import './App.css';
 import Banner from './Components/Banner/Banner';
-import { action, originals} from './urls'
+import { action, comedy, originals} from './urls'
 
 import RowPost from './Components/RowPost/RowPost';
 
@@ -13,7 +13,8 @@ function App() {
       <NavBar />
       <Banner />
       <RowPost url={originals} title='Netflix Original'/>
-      <RowPost url={action} title='Action' isSmall />
+      <RowPost url={action} title='Action Movies' isSmall />
+      <RowPost url={comedy} title='Comedy Movies' isSmall />
       
       
       
